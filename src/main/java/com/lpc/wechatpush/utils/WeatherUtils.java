@@ -11,10 +11,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author byu_rself
- * @date 2022/8/22 17:10
- */
 public class WeatherUtils {
 //https://restapi.amap.com/v3/weather/weatherInfo?city=110101&key=9e87975dcc9ceb0967463d5d5417f250&extensions=all
     private static final String district_id = "440100";
@@ -54,8 +50,11 @@ public class WeatherUtils {
     /**
      * 高德天气
      */
+    //城市码
     private static final String city = "440100";
+    //all/base    all：未来几天天气   base：今天天气
     private static final String extensions = "all";
+    //需要注册高德地图拿到key
     private static final String Key = "9e87975dcc9ceb0967463d5d5417f250";
 
     public static TodayWeather getTodayWeather(){
@@ -65,6 +64,7 @@ public class WeatherUtils {
         map.put("extensions", extensions);
         map.put("key", Key);
         /**
+         * 请求地址
          * https://restapi.amap.com/v3/weather/weatherInfo?city=110101&key=9e87975dcc9ceb0967463d5d5417f250&extensions=all
          */
         String res = restTemplate.getForObject(

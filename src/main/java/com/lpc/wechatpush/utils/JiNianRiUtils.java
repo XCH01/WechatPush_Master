@@ -5,10 +5,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-/**
- * @author byu_rself
- * @date 2022/8/22 19:01
- */
 public class JiNianRiUtils {
     public static int getLianAi() {
         return calculationLianAi("2021-11-15");
@@ -31,22 +27,6 @@ public class JiNianRiUtils {
         }
         return 0;
     }
-    /*
-    	{{riqi.DATA}}
-    	{{beizhu.DATA}}
-    	 城市：{{city.DATA}}
-    	 天气：{{tianqi.DATA}}
-    	  最低气温：{{low.DATA}}
-    	  最高气温：{{high.DATA}}
-    	  当前风向：{{wind_dir.DATA}}
-    	  当前风力：{{wind_class.DATA}}
-    	   {{hersBirthday.DATA}}
-    	   {{hisBirthday.DATA}}
-    	   今天是我们恋爱的第{{lianai.DATA}}天
-    	   今日土味情话：{{caihongpi.DATA}}
-    	   {{english.DATA}}
-    	   {{chinese.DATA}}
-     */
 
     public static int calculationBirthday(String clidate) throws ParseException {
         SimpleDateFormat myFormatter = new SimpleDateFormat("yyyy-MM-dd");

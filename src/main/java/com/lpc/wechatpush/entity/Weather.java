@@ -2,10 +2,6 @@ package com.lpc.wechatpush.entity;
 
 import lombok.Data;
 
-/**
- * @author byu_rself
- * @date 2022/8/22 17:01
- */
 @Data
 public class Weather {
     /** 白天天气 */

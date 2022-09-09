@@ -19,10 +19,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * @author byu_rself
- * @date 2022/8/22 17:09
- */
 @Service
 public class IPushServiceImpl implements IPushService {
     @Value("${wx.appId}")
@@ -51,27 +47,27 @@ public class IPushServiceImpl implements IPushService {
                 //模板Id
 //                .templateId("UpmNzkg8lznD8sP1mGdesK46E4ugEmGWgwD0HtQv2eI")
                 //晚上
-//                .templateId("PXxPHVVxOpCuzo423z2y0UwOb8k588YU2LgudzM8lfQ")
                 .templateId("kxUR5OoRl9dZAUFrKSEClS7DWqFG6oirk3Dlzp9BTuM")
                 .build();
-/*
-{{riqi.DATA}}{{beizhu.DATA}}
-城市：{{city.DATA}}
-天气：{{tianqi.DATA}}
-最低气温：{{low.DATA}}°
-最高气温：{{high.DATA}}°
-当前风向：{{wind_dir.DATA}}
-当前风力：{{wind_class.DATA}}
-生日倒计时-(๑╹◡╹)ﾉ"""
-{{hersBirthday.DATA}}
-{{hisBirthday.DATA}}
-今天是我们恋爱的第{{lianai.DATA}}天
+        //TODO 模板谨慎修改
+        /*
+        {{riqi.DATA}}{{beizhu.DATA}}
+        城市：{{city.DATA}}
+        天气：{{tianqi.DATA}}
+        最低气温：{{low.DATA}}°
+        最高气温：{{high.DATA}}°
+        当前风向：{{wind_dir.DATA}}
+        当前风力：{{wind_class.DATA}}
+        生日倒计时-(๑╹◡╹)ﾉ"""
+        {{hersBirthday.DATA}}
+        {{hisBirthday.DATA}}
+        今天是我们恋爱的第{{lianai.DATA}}天
 
-今日土味情话：{{caihongpi.DATA}}
+        今日土味情话：{{caihongpi.DATA}}
 
-{{english.DATA}}
-{{chinese.DATA}}
- */
+        {{english.DATA}}
+        {{chinese.DATA}}
+         */
         // 3,如果是正式版发送模版消息，这里需要配置你的信息
         TodayWeather todayWeather = WeatherUtils.getTodayWeather();
 //        templateMessage.addData(new WxMpTemplateData("riqi", todayWeather.getForecasts().get(0).getCity() + "  " + todayWeather.getForecasts().get(0).getCity(), "#00BFFF"));
@@ -95,7 +91,7 @@ public class IPushServiceImpl implements IPushService {
         //获取当前时间得阴历时间
         ChineseCalendar calendar = ChineseCalendar.as(today);
 
-        //阴历4月7日  获取阴历得月份和日期进行比较  5.7
+        //阴历4月7日  获取阴历得月份和日期进行比较
         if (calendar.getChinaMonth() == 4 && calendar.getChinaDay() == 7) {
             beizhu = "生日快乐！！！";
         }
@@ -105,8 +101,12 @@ public class IPushServiceImpl implements IPushService {
         //计算距离下一个生日还有多少天
         int birthDayW = 0;
         int birthDayM = 0;
-
+        /**
+         * 修改生日
+         */
+        //他/她生日
         birthDayW = ChineseCalendar.Tool.getBirthDay("2001-4-7");
+        //他/她生日
         birthDayM = ChineseCalendar.Tool.getBirthDay("2001-12-26");
         templateMessage.addData(new WxMpTemplateData("beizhu", beizhu+"\n", "#FF0000"));
         templateMessage.addData(new WxMpTemplateData("hersBirthday","距离爱妃生日还有"+birthDayW+"天", "#b44c97"));

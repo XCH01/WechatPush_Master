@@ -7,10 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.text.ParseException;
 
-/**
- * @author byu_rself
- * @date 2022/8/22 17:04
- */
 @RestController
 public class PushController {
 

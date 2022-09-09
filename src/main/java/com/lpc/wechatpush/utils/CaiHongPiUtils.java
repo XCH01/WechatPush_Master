@@ -13,13 +13,9 @@ import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author byu_rself
- * @date 2022/8/22 18:14
- */
 public class CaiHongPiUtils {
 
-    //彩虹屁key
+    //彩虹屁key 需要去注册
     private static final String key = "b92eff0f3179caf824b1da03ea84b9e3";
 
     /**
