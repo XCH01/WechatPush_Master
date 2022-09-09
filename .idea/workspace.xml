@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d172744b-6492-4709-8c50-ff729dfd531f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lpc/wechatpush/service/impl/IPushServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lpc/wechatpush/service/impl/IPushServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lpc/wechatpush/utils/CaiHongPiUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lpc/wechatpush/utils/CaiHongPiUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lpc/wechatpush/utils/JiNianRiUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lpc/wechatpush/utils/JiNianRiUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lpc/wechatpush/utils/WeatherUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lpc/wechatpush/utils/WeatherUtils.java" afterDir="false" />
-    </list>
+    <list default="true" id="d172744b-6492-4709-8c50-ff729dfd531f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -156,7 +149,7 @@
       <workItem from="1662685099976" duration="12772000" />
       <workItem from="1662705448126" duration="2714000" />
       <workItem from="1662729358136" duration="749000" />
-      <workItem from="1662730125500" duration="6556000" />
+      <workItem from="1662730125500" duration="7434000" />
     </task>
     <servers />
   </component>
@@ -233,6 +226,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="662" y="82" width="763" height="876" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1662693842112" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/lpc/wechatpush/WechatPushApplication.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
