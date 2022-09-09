@@ -1,0 +1,6 @@
+server:
+  port: 10001
+
+wx:
+  appId: wx92338b5ce4035e3e
+  appSecret: 1c2dc8312e6ee2e08b7894ded5e6cd21
